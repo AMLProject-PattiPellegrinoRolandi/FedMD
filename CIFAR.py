@@ -11,7 +11,6 @@ from FedMD import FedMD
 from utils.Neural_Networks import cnn_2layers, cnn_3layers, train_and_eval, evaluate
 from utils.Resnet20Batch import Resnet20_batchNorm
 from utils.Resnet20Group import Resnet20_groupNorm
-from utils.Resnet50 import ResNet50
 from utils.vision_transformer import VisionTransformer, CONFIGS
 import wandb
 
@@ -37,8 +36,7 @@ def parseArg():
 CANDIDATE_MODELS = {"2_layer_CNN": cnn_2layers,
                     "3_layer_CNN": cnn_3layers,
                     "resnet20_group": Resnet20_groupNorm,
-                    "resnet20_batch": Resnet20_batchNorm,
-                    "resnet50": ResNet50}
+                    "resnet20_batch": Resnet20_batchNorm}
 
 def save_checkpoint_pretrain(state, filename1="checkpoint_model_pretrain"):
   print("=> Saving checkpoint")

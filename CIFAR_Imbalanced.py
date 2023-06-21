@@ -11,7 +11,6 @@ from FedMD import FedMD
 from utils.Neural_Networks import cnn_2layers, cnn_3layers, train_and_eval, evaluate
 from utils.Resnet20Batch import Resnet20_batchNorm
 from utils.Resnet20Group import Resnet20_groupNorm
-from utils.Resnet50 import ResNet50
 from utils.vision_transformer import VisionTransformer, CONFIGS
 import wandb
 
